@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-ZSH_DOT_DIR="${0:a:h}"
+ZSH_DOT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 cd "${ZSH_DOT_DIR}"
 git submodule update --init --recursive
